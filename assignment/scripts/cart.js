@@ -10,10 +10,11 @@ console.log(basket);
 // - add the new item to the global array *basket*.
 // - return *true* indicating the item was added.
 function addItem(item){
-    
+    let addItem = basket.push(item);
+    return true;
 }
 
-console.log(addItem);
+console.log(addItem('koosh ball'));
 console.log(basket);
 // Create a function called listItems. It should:
 // - loop over the items in the *basket* array.
