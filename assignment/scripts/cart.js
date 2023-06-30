@@ -3,14 +3,18 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 
 // Create a global variable named basket and set it to an empty array.
-let basket =[];
+let basket = [];
 console.log(basket);
 // Create a function called addItem. It should:
 // - take an input parameter for a string *item*.
 // - add the new item to the global array *basket*.
 // - return *true* indicating the item was added.
+function addItem(item){
+    
+}
 
-
+console.log(addItem);
+console.log(basket);
 // Create a function called listItems. It should:
 // - loop over the items in the *basket* array.
 // - console.log each individual item on a new line.
@@ -44,6 +48,6 @@ try {
         isFull: typeof isFull !== 'undefined' ? isFull : undefined,
         removeItem: typeof removeItem !== 'undefined' ? removeItem : undefined,
     };
-} catch(e) {
+} catch (e) {
     // Do nothing
 }
