@@ -14,11 +14,8 @@ console.log(basket.length);
 // - add the new item to the global array *basket*.
 // - return *true* indicating the item was added.
 function addItem(item) {
-
-    console.log(basket.push(item))
+    basket.push(item);
     return true;
-
-
 }
 
 console.log(addItem('koosh ball'));
@@ -32,10 +29,11 @@ function listItems(basket) {
         console.log(basket[i]);
     }
 }
-
+//what are the extra numbers getting logged?
 console.log(basket);
 console.log(addItem('troll doll'));
 console.log(listItems(basket));
+//not sure where 'undefined is coming from
 console.log(addItem('slap bracelet'));
 console.log(listItems(basket));
 //console.log(basket.push('slap bracelet'));
@@ -43,12 +41,20 @@ console.log(listItems(basket));
 //console.log(basket);
 // Create a function called empty. It should:
 // - reset the *basket* to an empty array.
-//function empty(basket){
-//    let basket = [];
-//}
+function empty(basket){
+    for (i = 0; i < basket.length; i++) {
+        console.log(basket[i]);
+    }
+    return basket = [];
+}
 
 console.log(basket);
-//console.log(empty(basket));
+console.log(empty(basket));
+//should be empty before I add 'pogs'!
+console.log(addItem('pogs'));
+//why is evertyhing else back?
+console.log(basket);
+console.log(empty(basket));
 
 
 
